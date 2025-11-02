@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 InsightBoard.AI  
+### _Intelligent Data Insight Dashboard with AI-Powered Analytics_
 
-## Getting Started
+![InsightBoard Banner](./screenshots/chart.png)
 
-First, run the development server:
+---
 
+## 🚀 Overview
+
+**InsightBoard.AI** is an interactive, AI-driven data dashboard that transforms raw CSV files into intelligent insights — think of it as **ChatGPT for your analytics**.  
+Upload your CSV → visualize trends instantly → ask AI questions → download a professional PDF report with charts and summaries.
+
+---
+
+## 🧠 Key Features
+
+✅ **CSV Upload & Auto Visualization** – Upload any CSV and get instant charts  
+✅ **Dynamic Chart Selection** – Switch between columns for comparison  
+✅ **AI-Powered Insights** – Ask natural questions like _“Which student scored highest in Science?”_  
+✅ **Voice Input** – Speak your questions (hands-free query)  
+✅ **PDF Report Export** – Download AI summary + chart in a single click  
+✅ **Clean Modern UI** – Built with ShadCN UI + TailwindCSS  
+✅ **Secure API Handling** – OpenAI key stored safely via environment variables  
+✅ **Fully Deployed on Vercel** – Fast, serverless hosting with zero config  
+
+---
+
+## 🧩 Tech Stack
+
+| Category | Tools / Libraries |
+|-----------|------------------|
+| **Framework** | Next.js 16 (App Router), React 18, TypeScript |
+| **Styling / UI** | Tailwind CSS, ShadCN UI |
+| **Data Handling** | PapaParse (CSV Parser) |
+| **Charts & Analytics** | Chart.js |
+| **AI Integration** | OpenAI API (gpt-4o-mini) |
+| **Voice Recognition** | react-speech-recognition |
+| **Report Generation** | html2canvas, jsPDF |
+| **Hosting / CI CD** | Vercel |
+| **Version Control** | Git & GitHub |
+
+---
+
+
+---
+
+## ⚙️ Local Setup & Installation
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/<your-username>/insightboard-ai.git
+cd insightboard-ai
+
+### 2️⃣ Install Dependencies
+```bash
+npm install
+
+### 3️⃣ Add Environment Variable
+```bash
+OPENAI_API_KEY=sk-your-secret-key
+
+### 4️⃣ Run Development Server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
