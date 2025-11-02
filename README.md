@@ -1,7 +1,9 @@
 # 📊 InsightBoard.AI  
 ### _Intelligent Data Insight Dashboard with AI-Powered Analytics_
 
-[![Live Demo](https://insightboard-ai-sable.vercel.app/)]
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-InsightBoard.AI-blue?style=for-the-badge)](https://insightboard-ai-sable.vercel.app/)
+[![Built with Next.js](https://img.shields.io/badge/Built%20With-Next.js%2016-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20On-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
 ![InsightBoard Banner](./screenshots/chart.png)
 
