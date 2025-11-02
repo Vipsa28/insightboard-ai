@@ -62,3 +62,8 @@ OPENAI_API_KEY=sk-your-secret-key
 ### 4️⃣ Run Development Server
 ```bash
 npm run dev
+
+```bash
+⚠️ Note: The live demo uses my personal OpenAI API key for limited testing.
+AI functionality may stop once the $5 free credit expires.
+Please run locally with your own key for full access.

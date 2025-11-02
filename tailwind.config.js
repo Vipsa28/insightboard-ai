@@ -9,7 +9,7 @@ module.exports = {
         extend: {},
     },
     plugins: [],
-    // 🚫 Disable OKLCH color variables completely
+    
     experimental: {
         disableColorVariables: true,
     },

@@ -19,7 +19,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
-import { Button } from "@/components/ui/button"; // 💡 Added reset button support
+import { Button } from "@/components/ui/button"; 
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -44,8 +44,7 @@ export default function ChartDisplay() {
     setNumericKeys(numericCols);
 
     const yKey = columnToUse || selectedKey || numericCols[0];
-    const xKey = Object.keys(parsed[0])[0]; // usually label (Student, Category)
-
+    const xKey = Object.keys(parsed[0])[0]; 
     const grouped: Record<string, number> = {};
     parsed.forEach((row: any) => {
       const label = row[xKey];

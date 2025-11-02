@@ -21,7 +21,7 @@ export default function UploadCSV() {
         setData(result.data);
         localStorage.setItem("csvData", JSON.stringify(result.data));
 
-        // ✅ Dispatch a custom event to notify other components
+        // Dispatch a custom event to notify other components
         window.dispatchEvent(new Event("csvDataUpdated"));
 
         alert("✅ CSV uploaded and stored successfully!");

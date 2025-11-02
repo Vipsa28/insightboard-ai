@@ -15,14 +15,14 @@ export default function DownloadReport() {
         return;
       }
 
-      // ✅ Optional: read dataset name from localStorage (if saved)
+     
       const storedData = localStorage.getItem("csvData");
       const datasetName = localStorage.getItem("csvFileName") || "Uploaded CSV";
 
-      // 🧱 Create sandbox to isolate Tailwind oklch colors
+      
       const clone = chart.cloneNode(true) as HTMLElement;
       const sandbox = document.createElement("div");
-      sandbox.setAttribute("data-html2canvas-ignore", ""); // 👉 triggers RGB fallback in globals.css
+      sandbox.setAttribute("data-html2canvas-ignore", ""); 
       sandbox.style.position = "fixed";
       sandbox.style.top = "-9999px";
       sandbox.style.left = "-9999px";
@@ -34,7 +34,7 @@ export default function DownloadReport() {
       sandbox.appendChild(clone);
       document.body.appendChild(sandbox);
 
-      // 🧩 Try capturing chart — with fallback if html2canvas fails
+      // Try capturing chart — with fallback if html2canvas fails
       let chartCanvas;
       try {
         chartCanvas = await html2canvas(sandbox, {
